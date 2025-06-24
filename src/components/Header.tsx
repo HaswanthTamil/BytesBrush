@@ -8,11 +8,11 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
 const navLinks = [
-  { href: "/about", label: "About" },
-  { href: "/team", label: "Team" },
-  { href: "/services", label: "Services" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/contact", label: "Contact" },
+  { href: "#about", label: "About" },
+  { href: "#team", label: "Team" },
+  { href: "#services", label: "Services" },
+  { href: "#portfolio", label: "Portfolio" },
+  { href: "#contact", label: "Contact" },
 ]
 
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--peach)] shadow-md font-mono">
       <div className="flex justify-between items-center px-5">
         {/* Logo */}
-        <Link href="/">
+        <Link href="#lander">
           <div className="flex items-center gap-3 hover:translate-x-1 transition-transform">
             <Image src="/logo.png" alt="BytesBrush" width={50} height={50} />
             <h1 className="font-semibold text-2xl -mt-2">BytesBrush</h1>
@@ -44,7 +44,7 @@ const Header = () => {
         </div>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex gap-7 text-[#660000]">
+        <nav className="hidden md:flex gap-7 text-[var(--maroon)]">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}

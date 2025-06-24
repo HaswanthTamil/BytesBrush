@@ -7,6 +7,9 @@ import Header from "@/components/Header"
 export const metadata: Metadata = {
   title: "BytesBrush",
   description: "Meet the team",
+  icons: {
+    icon: "/BB_Logo.png",
+  },
 }
 
 export default function RootLayout({
