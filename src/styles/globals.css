@@ -9,6 +9,8 @@
     --lime: #B1DDC9;
 }
 
+/* glass shine for buttons */
+
 .btn-shine {
   position: relative;
   overflow: hidden;
@@ -42,3 +44,28 @@
     left: 125%;
   }
 }
+
+/* Header drop down tiles */
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.3s ease-out;
+}
+
+/* Smooth blur-glass effect */
+
+.backdrop-blur-md {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
