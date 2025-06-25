@@ -2,6 +2,7 @@
 
 import Lander from "@/components/sections/Lander"
 import Qualities from "@/components/sections/Qualities"
+import Team from "@/components/sections/Team"
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
         </section>
         <section id="qualities">
           <Qualities />
+        </section>
+        <section id="team">
+          <Team />
         </section>
       </div>
     </>
