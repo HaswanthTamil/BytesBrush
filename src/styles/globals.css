@@ -3,9 +3,10 @@
 @import "tailwindcss";
 
 :root {
-    --peach: #FCCFB2;
-    --pink: #FFCADA;
+    --peach: #F5F0EB;
+    --pink: #FADDE2;
     --cyan: #6CD0D0;
+    --cyanlight: #A9E3E3;
     --lime: #B1DDC9;
     --maroon: #660000;
 }
