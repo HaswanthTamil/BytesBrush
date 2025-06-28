@@ -9,10 +9,10 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const navLinks = [
   { href: "/about", label: "About" },
-  { href: "#team", label: "Team" },
-  { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Portfolio" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#team", label: "Team" },
+  { href: "/#services", label: "Services" },
+  { href: "/#portfolio", label: "Portfolio" },
+  { href: "/#contact", label: "Contact" },
 ]
 
 const Header = () => {
@@ -78,7 +78,7 @@ const Header = () => {
                 key={href}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="backdrop-blur-md bg-white/20 rounded-full px-5 py-3 text-white text-sm shadow-lg border border-white/30 transition-all"
+                className="backdrop-blur-md bg-white/20 rounded-full px-5 py-3 text-[var(--cyan)] text-sm shadow-lg border border-white/30 transition-all"
               >
                 <Link href={href} onClick={() => setIsOpen(false)}>
                   {label}
