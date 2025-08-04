@@ -70,11 +70,8 @@ const ContactSection = () => {
                 href: "https://discord.gg/D4aU8f2vcK",
               },
             ].map((item, idx) => (
-              <Link href={item.href}>
-                <div
-                  key={idx}
-                  className="flex flex-row items-center gap-3 px-4 py-2"
-                >
+              <Link key={idx} href={item.href}>
+                <div className="flex flex-row items-center gap-3 px-4 py-2">
                   <button className="btn-shine rounded-full p-2 shadow-md bg-[var(--cyan)]">
                     {item.icon}
                   </button>
