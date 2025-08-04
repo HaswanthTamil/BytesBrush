@@ -1,6 +1,6 @@
 // /components/Footer.tsx
 
-import { FaLinkedin, FaInstagram, FaDiscord, FaXTwitter } from "react-icons/fa6"
+import { FaEnvelope, FaInstagram, FaPhone } from "react-icons/fa6"
 
 const Footer = () => {
   return (
@@ -14,32 +14,25 @@ const Footer = () => {
 
       <div className="flex gap-5 text-xl">
         <a
-          href="#"
-          aria-label="LinkedIn"
+          href="tel:+7339312996"
+          aria-label="Phone"
           className="hover:text-cyan-400 transition"
         >
-          <FaLinkedin />
+          <FaPhone />
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/bytesbrush/"
           aria-label="Instagram"
           className="hover:text-pink-400 transition"
         >
           <FaInstagram />
         </a>
         <a
-          href="#"
-          aria-label="Discord"
+          href="mailto:haswanthtamilofficial@gmail.com"
+          aria-label="Mail"
           className="hover:text-indigo-400 transition"
         >
-          <FaDiscord />
-        </a>
-        <a
-          href="#"
-          aria-label="Twitter / X"
-          className="hover:text-gray-400 transition"
-        >
-          <FaXTwitter />
+          <FaEnvelope />
         </a>
       </div>
 

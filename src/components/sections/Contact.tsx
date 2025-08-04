@@ -2,8 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { FaDiscord, FaInstagram, FaLinkedin } from "react-icons/fa"
-import { FaXTwitter } from "react-icons/fa6"
+import { FaDiscord, FaInstagram, FaEnvelope } from "react-icons/fa"
 
 const ContactSection = () => {
   return (
@@ -55,20 +54,33 @@ const ContactSection = () => {
           </div>
           <div className="flex flex-col gap-y-2 py-4 font-semibold">
             {[
-              { icon: <FaLinkedin />, label: "BytesBrush" },
-              { icon: <FaXTwitter />, label: "BytesBrush" },
-              { icon: <FaInstagram />, label: "BytesBrush" },
-              { icon: <FaDiscord />, label: "HiveHub" },
+              {
+                icon: <FaEnvelope />,
+                label: "ByteshBrush",
+                href: "mailto:haswanthtamilofficial@gmail.com",
+              },
+              {
+                icon: <FaInstagram />,
+                label: "BytesBrush",
+                href: "https://instagram.com/bytesbrush/",
+              },
+              {
+                icon: <FaDiscord />,
+                label: "HiveHub",
+                href: "https://discord.gg/D4aU8f2vcK",
+              },
             ].map((item, idx) => (
-              <div
-                key={idx}
-                className="flex flex-row items-center gap-3 px-4 py-2"
-              >
-                <button className="btn-shine rounded-full p-2 shadow-md bg-[var(--cyan)]">
-                  {item.icon}
-                </button>
-                <span>{item.label}</span>
-              </div>
+              <Link href={item.href}>
+                <div
+                  key={idx}
+                  className="flex flex-row items-center gap-3 px-4 py-2"
+                >
+                  <button className="btn-shine rounded-full p-2 shadow-md bg-[var(--cyan)]">
+                    {item.icon}
+                  </button>
+                  <span>{item.label}</span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
